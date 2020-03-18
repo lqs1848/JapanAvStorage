@@ -16,6 +16,4 @@ AvMosaicSpot 自动识别目录下的AV 番号 查询是有码还是无码的大
 <br>
 NfoDownload 为视频文件生成 .nfo文件 可以为jellyfin添加 发行日期 TAG 导演 女优信息 还有厂商
 <br>
-
-
-
+StartDownload 女优头像采集    请指定到Jellyfin的数据存储目录 下的 /metadata/People
