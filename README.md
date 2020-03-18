@@ -4,9 +4,9 @@
 让大姐姐变得井然有序<br>
 
 ![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/1.jpg)<br>
-![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/2.jpg)<br>
+![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/2.png)<br>
 AvCoverDownloader 自动识别目录下的番号 下载大姐姐的靓照 和 本片所有出场的大姐姐姓名<br>
-![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/3.jpg)<br>
+![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/3.png)<br>
 2只是换了一个网站抓取 没有2就是 抓去javbus f2cppv 识别 f2c 的<br>
 
 <br>
