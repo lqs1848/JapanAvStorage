@@ -23,10 +23,11 @@ namespace AvCoverDownloader
 
         private Queue<Av> _avs;
         
-        public Collector(SynchronizationContext formContext, List<Av> avs)
+        public Collector(SynchronizationContext formContext, List<Av> avs, string path)
         {
             _avs = new Queue<Av>(avs);
             _syncContext = formContext;
+            basePath = path;
         }
 
         public void Start()

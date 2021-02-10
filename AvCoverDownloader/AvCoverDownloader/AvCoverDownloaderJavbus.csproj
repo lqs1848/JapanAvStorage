@@ -7,7 +7,7 @@
     <ProjectGuid>{874EA013-E55B-426F-9B88-AABA13B55037}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>AvCoverDownloader</RootNamespace>
-    <AssemblyName>AvCoverDownloader</AssemblyName>
+    <AssemblyName>AvCoverDownloaderJavbus</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Av.cs" />
+    <Compile Include="IniFiles.cs" />
     <Compile Include="Collector.cs" />
     <Compile Include="Download.cs" />
     <Compile Include="ExeLog.cs" />

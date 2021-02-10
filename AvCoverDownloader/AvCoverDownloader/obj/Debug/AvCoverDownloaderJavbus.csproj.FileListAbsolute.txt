@@ -1,0 +1,9 @@
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\obj\Debug\AvCoverDownloader.Form1.resources
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\obj\Debug\AvCoverDownloader.Properties.Resources.resources
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\obj\Debug\AvCoverDownloaderJavbus.csproj.GenerateResource.cache
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\obj\Debug\AvCoverDownloaderJavbus.csproj.CoreCompileInputs.cache
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\bin\Debug\AvCoverDownloaderJavbus.exe.config
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\bin\Debug\AvCoverDownloaderJavbus.exe
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\bin\Debug\AvCoverDownloaderJavbus.pdb
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\obj\Debug\AvCoverDownloaderJavbus.exe
+D:\Github\JapanAvStorage\AvCoverDownloader\AvCoverDownloader\obj\Debug\AvCoverDownloaderJavbus.pdb
