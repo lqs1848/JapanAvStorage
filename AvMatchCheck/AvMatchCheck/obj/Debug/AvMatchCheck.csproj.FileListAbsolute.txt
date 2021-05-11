@@ -36,3 +36,13 @@ Z:\OneDrive\C#\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.Properties.Resou
 Z:\OneDrive\C#\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.csproj.GenerateResource.cache
 Z:\OneDrive\C#\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.exe
 Z:\OneDrive\C#\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.pdb
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.csprojAssemblyReference.cache
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvCoverDownloader.Form1.resources
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.Properties.Resources.resources
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.csproj.GenerateResource.cache
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.csproj.CoreCompileInputs.cache
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.exe
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\obj\Debug\AvMatchCheck.pdb
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\bin\Debug\AvMatchCheck.exe.config
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\bin\Debug\AvMatchCheck.exe
+D:\Github\JapanAvStorage\AvMatchCheck\AvMatchCheck\bin\Debug\AvMatchCheck.pdb

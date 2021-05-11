@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AvMatchCheck;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -270,7 +271,7 @@ namespace AvCoverDownloader
             this.textBox3.AppendText("\r\n---执行日志---\r\n");
 
             button3.Enabled = false;
-            Collector cl = new Collector(SynchronizationContext.Current,avs);
+            Collector cl = new Collector(SynchronizationContext.Current,avs,comboBox.Text);
             cl.CollectorLog += (o, text) =>
             {
                 this.textBox4.AppendText(text + "\r\n");
@@ -288,6 +289,22 @@ namespace AvCoverDownloader
             this.textBox2.Text = "";
             this.textBox3.Text = "";
             button3.Enabled = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            IniFiles iniFile = new IniFiles("address.ini");
+            string path = iniFile.ReadString("javbus", "path", "https://www.javbus.com");
+            string[] paths = path.Split(',');
+            foreach (string p in paths)
+            {
+                comboBox.Items.Add(p);
+            }
+            comboBox.Text = comboBox.Items[0].ToString();
+
+            string proxy = iniFile.ReadString("javbus", "proxy", "");
+            textBox6.Text = proxy;
+            Download.SetProxy(textBox6.Text);
         }
     }
 }

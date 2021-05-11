@@ -47,6 +47,15 @@ namespace AvCoverDownloader
             string[] folders = Directory.GetDirectories(textBox1.Text);
             foreach (string folder in folders)
             {
+                bool nfoExist = false;
+                string[] files = Directory.GetFiles(folder);
+                foreach (string f in files){
+                    if (f.EndsWith(".nfo"))
+                        nfoExist = true;
+                }
+                if (nfoExist)
+                    continue;
+
                 int fgg = folder.LastIndexOf("\\") + 1;
                 string name = folder.Substring(fgg, folder.Length - fgg).Trim();
                 try {
@@ -71,7 +80,7 @@ namespace AvCoverDownloader
             this.textBox3.AppendText("\r\n---下载日志---\r\n");
 
             button3.Enabled = false;
-            Collector cl = new Collector(SynchronizationContext.Current,avs);
+            Collector cl = new Collector(SynchronizationContext.Current,avs, comboBox.Text);
             cl.CollectorLog += (o, text) =>
             {
                 this.textBox4.AppendText(text + "\r\n");
@@ -96,7 +105,18 @@ namespace AvCoverDownloader
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            IniFiles iniFile = new IniFiles("address.ini");
+            string path = iniFile.ReadString("javbus", "path", "https://www.javbus.com");
+            string[] paths = path.Split(',');
+            foreach (string p in paths)
+            {
+                comboBox.Items.Add(p);
+            }
+            comboBox.Text = comboBox.Items[0].ToString();
+
+            string proxy = iniFile.ReadString("javbus", "proxy", "");
+            textBox7.Text = proxy;
+            Download.SetProxy(textBox7.Text);
         }
 
         private void button4_Click(object sender, EventArgs e)

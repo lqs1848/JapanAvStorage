@@ -1,0 +1,10 @@
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\bin\Debug\AvCoverDownloader.exe.config
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\bin\Debug\AvCoverDownloader.exe
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\bin\Debug\AvCoverDownloader.pdb
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.csprojAssemblyReference.cache
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.Form1.resources
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.Properties.Resources.resources
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.csproj.GenerateResource.cache
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.csproj.CoreCompileInputs.cache
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.exe
+D:\Github\JapanAvStorage\NfoDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.pdb
