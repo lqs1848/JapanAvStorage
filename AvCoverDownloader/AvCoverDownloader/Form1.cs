@@ -205,6 +205,29 @@ namespace AvCoverDownloader
                         IdSet.Add(fh);
                     }
                 }
+                int heyzo = name.ToLower().IndexOf("heyzo");
+                if (heyzo != -1)
+                {
+                    string heyzoStr = name.Substring(heyzo);
+                    mat = new Regex("[0-9]{1,4}").Match(heyzoStr);
+                    if (mat.Success)
+                    {
+                        for (int i = 0; i < mat.Groups.Count; i++)
+                        {
+                            string num = mat.Groups[i].Value;
+                            num = "HEYZO-" + prefixRepairFlag(num, 4, "0");
+                            if (!IdSet.Contains(num))
+                            {
+                                Av av = new Av();
+                                av.Id = num;
+                                av.Path = folder;
+                                avs.Add(av);
+                                textBox2.AppendText("->" + num + "\r\n");
+                                IdSet.Add(num);
+                            }
+                        }//for
+                    }
+                }//if
 
             }//for
 
@@ -236,6 +259,17 @@ namespace AvCoverDownloader
                     return i;
             }
             return -1;
+        }
+
+        //前缀补充
+        string prefixRepairFlag(string str, int size, string flag)
+        {
+            int x = size - str.Length;
+            for (int i = 0; i < x; i++)
+            {
+                str = flag + str;
+            }
+            return str;
         }
 
         private void Form1_Load(object sender, EventArgs e)
