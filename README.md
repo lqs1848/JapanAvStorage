@@ -17,3 +17,20 @@ AvMosaicSpot 自动识别目录下的AV 番号 查询是有码还是无码的大
 NfoDownload 为视频文件生成 .nfo文件 可以为jellyfin添加 发行日期 TAG 导演 女优信息 还有厂商
 <br>
 StartDownload 女优头像采集    请指定到Jellyfin的数据存储目录 下的 /metadata/People
+
+
+
+
+
+
+
+
+
+![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/111.jpg)<br>
+
+![image](https://github.com/lqs1848/JapanAvStorage/blob/master/info/222.jpg)<br>
+
+地址过期了自己替换 address.ini 中的地址就行<br>
+
+如果不挂代理 proxy=127.0.0.1:1080 删掉就好
+
