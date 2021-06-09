@@ -12,7 +12,7 @@ namespace AvCoverDownloader
 {
     class Collector
     {
-        String basePath = "https://www.dmmsee.cloud";
+        string basePath = "";
         public EventHandler<String> CollectorLog;
         public EventHandler<String> ErrorLog;
         SynchronizationContext _syncContext;
@@ -104,6 +104,9 @@ namespace AvCoverDownloader
             if (match.Success)
             {
                 string url = match.Groups["url"].Value;
+                if (!url.StartsWith("http")) {
+                    url = basePath + url;
+                }
                 Download.HttpDownloadFile(url,av.Path+"\\", "art.jpg");
                 //int fg = url.LastIndexOf("/") + 1;
                 //string name = url.Substring(fg, url.Length - fg - 6).Trim();
