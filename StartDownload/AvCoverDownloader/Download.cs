@@ -10,19 +10,35 @@ namespace AvCoverDownloader
 {
     class Download
     {
+        private static string _proxy = null;
+
+        public static void SetProxy(string proxy)
+        {
+            _proxy = proxy;
+        }
+
+        public static HttpWebRequest GetWebRequest(string url)
+        {
+            HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
+            if (_proxy != null) request.Proxy = new WebProxy(_proxy);
+            return request;
+        }
+
         public static void HttpDownloadFile(string url, string path, string fileName)
         {
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
             if (File.Exists(path + fileName))
+            {
                 return;
-            
+            }
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
             try
             {
                 // 设置参数
-                HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
-                request.Proxy = null;
-                //request.Proxy = new WebProxy("127.0.0.1:1080");
+                HttpWebRequest request = GetWebRequest(url);
 
                 //发送请求并获取相应回应数据
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
@@ -34,7 +50,7 @@ namespace AvCoverDownloader
                 //创建本地文件写入流
                 Stream stream = new FileStream(path + fileName + ".covertemp", FileMode.Create);
                 byte[] bArr = new byte[1024 * 512];
-                
+
                 int size = responseStream.Read(bArr, 0, (int)bArr.Length);
                 while (size > 0)
                 {
@@ -55,9 +71,8 @@ namespace AvCoverDownloader
         public static string GetHtml(string url, Encoding ed)
         {
             string Html = string.Empty;//初始化新的webRequst
-            HttpWebRequest Request = (HttpWebRequest)WebRequest.Create(url);
-            Request.Proxy = null;
-            //Request.Proxy = new WebProxy("127.0.0.1:1080");
+            HttpWebRequest Request = GetWebRequest(url);
+
             Request.KeepAlive = true;
             Request.ProtocolVersion = HttpVersion.Version11;
             Request.Method = "GET";

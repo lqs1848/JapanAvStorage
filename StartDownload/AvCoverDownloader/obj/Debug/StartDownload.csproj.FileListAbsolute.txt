@@ -1,0 +1,10 @@
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.Form1.resources
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.Properties.Resources.resources
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\StartDownload.csproj.GenerateResource.cache
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\StartDownload.csproj.CoreCompileInputs.cache
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.exe
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\AvCoverDownloader.pdb
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\bin\Debug\AvCoverDownloader.exe.config
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\bin\Debug\AvCoverDownloader.exe
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\bin\Debug\AvCoverDownloader.pdb
+D:\Github\JapanAvStorage\StartDownload\AvCoverDownloader\obj\Debug\StartDownload.csprojAssemblyReference.cache
